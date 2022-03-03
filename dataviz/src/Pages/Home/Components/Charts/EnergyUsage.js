@@ -5,10 +5,10 @@ import PropTypes from 'prop-types';
 
 const LineChartOptions = {
   hAxis: {
-    title: 'Time',
+    title: 'Month',
   },
   vAxis: {
-    title: 'Energy Consumption',
+    title: 'Energy Usage',
   },
   series: {
     1: { curveType: 'function' },
@@ -19,10 +19,9 @@ class EnergyUsage extends Component {
         super(props);
       }
   render() {
-    console.log(this.props.data);
     return (
         <Chart
-          width={'700px'}
+          width={'1000'}
           height={'400px'}
           chartType="LineChart"
           loader={<div>Loading Chart</div>}
